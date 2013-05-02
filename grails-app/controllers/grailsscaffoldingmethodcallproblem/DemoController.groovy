@@ -5,11 +5,12 @@ class DemoController {
     static scaffold = true
 
     public testDemoMethod() {
-        render this.respondsTo('demoMethod')
+        println this.respondsTo('demoMethod')
+	render demoMethod()
     }
 
     private demoMethod() {
-	println "Hi, I'm a method"
+	"Hi, I'm a method"
     }
 
 }
