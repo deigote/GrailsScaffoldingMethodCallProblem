@@ -5,6 +5,8 @@ class ${className}Controller {
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
+        println this.respondsTo('demoMethod') 
+        this.demoMethod()
         redirect(action: "list", params: params)
     }
 
